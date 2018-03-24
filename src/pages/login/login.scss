@@ -1,0 +1,57 @@
+page-login {
+
+    ion-grid {
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:40%;
+        transform:translateY(-50%);
+    }
+    font-size: 13px;
+    .content-md {
+        background-color: #76214a
+    }
+    ion-input, ion-textarea {
+        // padding: 5px;
+        justify-content: center;
+        background: transparent;
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+    }
+    ion-input[type=password] {
+        color:white;
+        opacity: 0.5;
+    }
+    ion-input[type=email] {
+        color:white;
+        opacity: 0.5;
+    }
+    .input-cover {
+        background-color: white;
+        opacity: 0.1;
+        border-radius: 10px;
+    }
+    p, span {
+        color: white;
+        opacity: 0.5;
+    }
+    a {
+        color: white;
+        opacity: 1;
+    }
+    a:active {
+        color:#ca054e;
+    }
+
+    .button-md{
+        background-color: #ca054e;
+        color: white;
+    }
+
+    .button-md:active {
+        background-color: hsl(338, 95%, 41%);;
+    }
+
+}

@@ -1,0 +1,25 @@
+<ion-content padding>
+  <ion-grid>
+    <form [formGroup]="user" (ngSubmit)="signup()" >
+      <ion-row>
+        <ion-col col-8 offset-2>
+          <ion-input placeholder="Email" type="email" formControlName="email"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-8 offset-2>
+          <ion-input placeholder="Password" type="password" formControlName="password"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 text-center>
+          <button ion-button type="submit" round [disabled]="!user.valid">Signup</button>
+          <p>
+            <a (click)="navigateToLogin()">Already have an acount?</a>
+          </p>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+</ion-content>
